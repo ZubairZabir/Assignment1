@@ -5,6 +5,16 @@ public class Paddle : MonoBehaviour
     public Rigidbody2D rb2d;
     public int id;
     public float moveSpeed = 2f;
+    private Vector3 startPosition;
+    
+    public void Start(){
+        startPosition = transform.position;
+        GameManager.instance.onReset += ResetPosition;
+    }
+
+    public void ResetPosition(){
+        transform.position = startPosition;
+    }
 
     public void Update(){
         float movement =ProcessInput();

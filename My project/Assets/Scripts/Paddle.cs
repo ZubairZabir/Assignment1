@@ -25,10 +25,10 @@ public class Paddle : MonoBehaviour
         float movement = 0f;
 
         switch (id){
-            case 1:
+            case 0:
                 movement = Input.GetAxis("MovePlayer1");
                 break;
-            case 2:
+            case 1:
                 movement = Input.GetAxis("MovePlayer2");
                 break;
         }

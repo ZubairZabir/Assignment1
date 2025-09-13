@@ -178,3 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa1ad15d4414e28a08f1906a3541b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  rb2d: {fileID: 606207358192170977}
+  id: 0
+  moveSpeed: 8

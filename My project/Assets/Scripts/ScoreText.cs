@@ -6,6 +6,6 @@ public class ScoreText : MonoBehaviour
     public TextMeshProUGUI text;
 
     public void SetScore(int value){
-        text.text = value.toString();
+        text.text = value.ToString();
     }
 }

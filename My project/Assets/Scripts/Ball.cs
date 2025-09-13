@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
     public float maxInitialAngle = 0.67f;
     public float moveSpeed = 1f;
     public float maxStartY = 4f;
+    public GameManager gameManager;
 
     private float startX = 0f;
 
@@ -29,6 +30,7 @@ public class Ball : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         ScoreZone scoreZone = collision.GetComponent<ScoreZone>();
         if (scoreZone){
+            gameManager.OnScoreZoneReached(scoreZone.id);
             ResetBall();
             InitialPush();
         }
